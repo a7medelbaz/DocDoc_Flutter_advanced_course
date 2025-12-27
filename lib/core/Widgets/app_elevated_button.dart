@@ -14,30 +14,24 @@ class AppElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32),
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.mainBlue,
-          minimumSize: const Size(311, 52),
-          // Setting the rounded edges
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(
-              16.0,
-            ), // Adjust the radius as needed
-          ),
-          // English comments: You can also set a fixed size or padding here
-          // padding: const EdgeInsets.symmetric(
-          //   vertical: 14,
-          //   horizontal: 24,
-          // ),
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.mainBlue,
+        minimumSize: const Size(double.infinity, 52),
+        // Setting the rounded edges
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(
+            16.0,
+          ), // Adjust the radius as needed
         ),
-        onPressed: onPressed,
-        child: Text(
-          text,
-          style: AppTextStyle.font16SemiBoldWithWhite,
-        ),
+        // English comments: You can also set a fixed size or padding here
+        // padding: const EdgeInsets.symmetric(
+        //   vertical: 14,
+        //   horizontal: 24,
+        // ),
       ),
+      onPressed: onPressed,
+      child: Text(text, style: AppTextStyle.font16SemiBoldWithWhite),
     );
   }
 }
