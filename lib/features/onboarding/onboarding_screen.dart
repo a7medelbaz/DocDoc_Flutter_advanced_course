@@ -1,6 +1,7 @@
 import 'package:doc_doc/core/Widgets/app_elevated_button.dart';
 import 'package:doc_doc/core/helper/extensions.dart';
 import 'package:doc_doc/core/routers/routes.dart';
+import 'package:doc_doc/core/themes/app_text_style.dart';
 import 'package:doc_doc/features/onboarding/widgets/doc_logo_and_name.dart';
 import 'package:doc_doc/features/onboarding/widgets/doctor_image_and_subtitle.dart';
 import 'package:flutter/material.dart';
@@ -22,8 +23,9 @@ class OnboardingScreen extends StatelessWidget {
                 SizedBox(height: 40.h),
                 DoctorImageAndSubtitle(),
                 Text(
-                  'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
+                  'Manage and schedule all of your medical appointments easily\n with Docdoc to get a new experience.',
                   textAlign: TextAlign.center,
+                  style: AppTextStyle.font10RegularWithGrey,
                 ),
                 SizedBox(height: 32.h),
                 AppElevatedButton(
