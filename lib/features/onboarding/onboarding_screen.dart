@@ -1,5 +1,5 @@
 import 'package:doc_doc/core/Widgets/app_elevated_button.dart';
-import 'package:doc_doc/core/helper/extentions.dart';
+import 'package:doc_doc/core/helper/extensions.dart';
 import 'package:doc_doc/core/routers/routes.dart';
 import 'package:doc_doc/features/onboarding/widgets/doc_logo_and_name.dart';
 import 'package:doc_doc/features/onboarding/widgets/doctor_image_and_subtitle.dart';
