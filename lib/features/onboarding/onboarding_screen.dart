@@ -28,11 +28,16 @@ class OnboardingScreen extends StatelessWidget {
                   style: AppTextStyle.font10RegularWithGrey,
                 ),
                 SizedBox(height: 32.h),
-                AppElevatedButton(
-                  text: 'Get Started',
-                  onPressed: () {
-                    context.pushNamed(Routes.loginScreen);
-                  },
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 30.0,
+                  ),
+                  child: AppElevatedButton(
+                    text: 'Get Started',
+                    onPressed: () {
+                      context.pushNamed(Routes.loginScreen);
+                    },
+                  ),
                 ),
               ],
             ),
