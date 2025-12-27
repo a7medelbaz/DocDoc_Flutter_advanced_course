@@ -14,27 +14,29 @@ class LogInScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.only(
-            right: 31.0,
-            left: 31.0,
-            top: 50,
-            bottom: 24,
-          ),
-          child: Column(
-            children: [
-              LogInIntroText(),
-              SizedBox(height: 36.h),
-              RegistrationField(),
-              SizedBox(height: 32.h),
-              AppElevatedButton(onPressed: () {}, text: " Log In"),
-              SizedBox(height: 46.h),
-              SocialLoginDivider(),
-              SizedBox(height: 32.h),
-              SocialLoginButtons(),
-              SizedBox(height: 93.h),
-              PolicyAndSignUp(),
-            ],
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.only(
+              right: 31.0,
+              left: 31.0,
+              top: 50,
+              bottom: 24,
+            ),
+            child: Column(
+              children: [
+                LogInIntroText(),
+                SizedBox(height: 36.h),
+                RegistrationField(),
+                SizedBox(height: 32.h),
+                AppElevatedButton(onPressed: () {}, text: " Log In"),
+                SizedBox(height: 46.h),
+                SocialLoginDivider(),
+                SizedBox(height: 32.h),
+                SocialLoginButtons(),
+                SizedBox(height: 93.h),
+                PolicyAndSignUp(),
+              ],
+            ),
           ),
         ),
       ),
