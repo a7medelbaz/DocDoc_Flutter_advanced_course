@@ -28,7 +28,9 @@ class LogInScreen extends StatelessWidget {
                 SizedBox(height: 36.h),
                 RegistrationField(),
                 SizedBox(height: 32.h),
-                AppElevatedButton(onPressed: () {}, text: " Log In"),
+                AppElevatedButton(onPressed: () {
+                  // TODO Complete this
+                }, text: " Log In"),
                 SizedBox(height: 46.h),
                 SocialLoginDivider(),
                 SizedBox(height: 32.h),
