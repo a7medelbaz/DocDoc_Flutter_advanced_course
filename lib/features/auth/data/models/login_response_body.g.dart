@@ -1,13 +1,15 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+// ignore_for_file: unused_element
+
 part of 'login_response_body.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-LoginResponse _$LoginResponseFromJson(Map<String, dynamic> json) =>
-    LoginResponse(
+LoginResponseBody _$LoginResponseBodyFromJson(Map<String, dynamic> json) =>
+    LoginResponseBody(
       message: json['message'] as String?,
       userData: json['data'] == null
           ? null
@@ -16,7 +18,7 @@ LoginResponse _$LoginResponseFromJson(Map<String, dynamic> json) =>
       code: (json['code'] as num?)?.toInt(),
     );
 
-Map<String, dynamic> _$LoginResponseToJson(LoginResponse instance) =>
+Map<String, dynamic> _$LoginResponseBodyToJson(LoginResponseBody instance) =>
     <String, dynamic>{
       'message': instance.message,
       'data': instance.userData,
