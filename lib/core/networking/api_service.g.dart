@@ -22,12 +22,13 @@ class _ApiService implements ApiService {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<LoginResponse> login(LoginRequestBody logInRequestBody) async {
+  Future<LoginResponseBody> login(LoginRequestBody logInRequestBody) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    final _data = logInRequestBody;
-    final _options = _setStreamType<LoginResponse>(
+    final _data = <String, dynamic>{};
+    _data.addAll(logInRequestBody.toJson());
+    final _options = _setStreamType<LoginResponseBody>(
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
@@ -38,9 +39,9 @@ class _ApiService implements ApiService {
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late LoginResponse _value;
+    late LoginResponseBody _value;
     try {
-      _value = LoginResponse.fromJson(_result.data!);
+      _value = LoginResponseBody.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options, response: _result);
       rethrow;
