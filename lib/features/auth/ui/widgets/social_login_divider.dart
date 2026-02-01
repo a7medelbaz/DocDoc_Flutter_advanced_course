@@ -10,17 +10,17 @@ class SocialLoginDivider extends StatelessWidget {
     return Row(
       children: [
         const Expanded(
-          child: Divider(thickness: 1, color: AppColors.grey400),
+          child: Divider(thickness: 1, color: AppColors.gray400),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Text(
             'Or Log in with',
-            style: AppTextStyle.font14RegularWithGrey,
+            style: AppTextStyle.font14RegularWithGray,
           ),
         ),
         const Expanded(
-          child: Divider(thickness: 1, color: AppColors.grey400),
+          child: Divider(thickness: 1, color: AppColors.gray400),
         ),
       ],
     );

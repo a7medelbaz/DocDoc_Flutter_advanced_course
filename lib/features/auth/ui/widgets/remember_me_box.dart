@@ -20,7 +20,7 @@ class _RememberMeBoxState extends State<RememberMeBox> {
         Checkbox(
           value: isChecked,
           side: const BorderSide(
-            color: AppColors.grey400,
+            color: AppColors.gray400,
             width: 2.0,
           ),
           activeColor: AppColors.mainBlue,
@@ -33,7 +33,7 @@ class _RememberMeBoxState extends State<RememberMeBox> {
         SizedBox(width: 1.5.w),
         Text(
           'Remember me',
-          style: AppTextStyle.font12RegularWithGrey400,
+          style: AppTextStyle.font12RegularWithGray400,
         ),
       ],
     );
