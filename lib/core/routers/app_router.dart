@@ -2,6 +2,7 @@ import 'package:doc_doc/core/di/dependency_injection.dart';
 import 'package:doc_doc/core/routers/routes.dart';
 import 'package:doc_doc/features/auth/logic/cubit/login_cubit.dart';
 import 'package:doc_doc/features/auth/ui/screens/login_screen.dart';
+import 'package:doc_doc/features/home/ui/home_screen.dart';
 import 'package:doc_doc/features/onboarding/onboarding_screen.dart';
 import 'package:doc_doc/features/auth/ui/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
@@ -30,10 +31,10 @@ class AppRouter {
           ),
         );
 
-      // case Routes.homeScreen:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const HomeScreen(),
-      //   );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
+        );
 
       default:
         return MaterialPageRoute(
