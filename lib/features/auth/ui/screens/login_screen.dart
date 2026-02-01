@@ -1,10 +1,13 @@
 import 'package:doc_doc/core/Widgets/app_elevated_button.dart';
+import 'package:doc_doc/features/auth/logic/cubit/login_cubit.dart';
 import 'package:doc_doc/features/auth/ui/widgets/log_in_intro_text.dart';
+import 'package:doc_doc/features/auth/ui/widgets/login_block_listener.dart';
 import 'package:doc_doc/features/auth/ui/widgets/policy_and_sign_up.dart';
 import 'package:doc_doc/features/auth/ui/widgets/registration_field.dart';
 import 'package:doc_doc/features/auth/ui/widgets/social_login_buttons.dart';
 import 'package:doc_doc/features/auth/ui/widgets/social_login_divider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LogInScreen extends StatelessWidget {
@@ -28,20 +31,30 @@ class LogInScreen extends StatelessWidget {
                 SizedBox(height: 36.h),
                 RegistrationField(),
                 SizedBox(height: 32.h),
-                AppElevatedButton(onPressed: () {
-                  // TODO Complete this
-                }, text: " Log In"),
+                AppElevatedButton(
+                  onPressed: () {
+                    validateThenDoLogin(context);
+                  },
+                  text: " Log In",
+                ),
                 SizedBox(height: 46.h),
                 SocialLoginDivider(),
                 SizedBox(height: 32.h),
                 SocialLoginButtons(),
                 SizedBox(height: 93.h),
                 PolicyAndSignUp(),
+                const LoginBlocListener(),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  void validateThenDoLogin(BuildContext context) {
+    if (context.read<LoginCubit>().formKey.currentState!.validate()) {
+      context.read<LoginCubit>().emitLoginStates();
+    }
   }
 }

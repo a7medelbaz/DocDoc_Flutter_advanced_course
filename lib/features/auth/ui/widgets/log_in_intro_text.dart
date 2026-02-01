@@ -16,7 +16,7 @@ class LogInIntroText extends StatelessWidget {
         ),
         Text(
           "We're excited to have you back, can't wait to see what you've been up to since you last \nlogged in.",
-          style: AppTextStyle.font14RegularWithGrey,
+          style: AppTextStyle.font14RegularWithGray,
         ),
       ],
     );
