@@ -1,4 +1,4 @@
-import 'package:doc_doc/core/themes/app_text_style.dart';
+import '../../../../core/themes/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class LogInIntroText extends StatelessWidget {

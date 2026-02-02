@@ -1,8 +1,8 @@
-import 'package:doc_doc/core/networking/api_error_handler.dart';
-import 'package:doc_doc/core/networking/api_results.dart';
-import 'package:doc_doc/core/networking/api_service.dart';
-import 'package:doc_doc/features/auth/data/models/login_request_body.dart';
-import 'package:doc_doc/features/auth/data/models/login_response_body.dart';
+import '../../../../core/networking/api_error_handler.dart';
+import '../../../../core/networking/api_results.dart';
+import '../../../../core/networking/api_service.dart';
+import '../models/login_request_body.dart';
+import '../models/login_response_body.dart';
 
 class LoginRepo {
   final ApiService _apiService;

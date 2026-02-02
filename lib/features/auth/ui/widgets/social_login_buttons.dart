@@ -1,5 +1,5 @@
-import 'package:doc_doc/core/themes/app_colors.dart';
-import 'package:doc_doc/core/utils/app_assets.dart';
+import '../../../../core/themes/app_colors.dart';
+import '../../../../core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

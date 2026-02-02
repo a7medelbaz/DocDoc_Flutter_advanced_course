@@ -1,10 +1,10 @@
-import 'package:doc_doc/core/Widgets/app_text_form_field.dart';
-import 'package:doc_doc/core/helper/app_regex.dart';
-import 'package:doc_doc/core/helper/spacing.dart';
-import 'package:doc_doc/core/themes/app_text_style.dart';
-import 'package:doc_doc/features/auth/logic/cubit/login_cubit.dart';
-import 'package:doc_doc/features/auth/ui/widgets/password_validations.dart';
-import 'package:doc_doc/features/auth/ui/widgets/remember_me_box.dart';
+import '../../../../core/Widgets/app_text_form_field.dart';
+import '../../../../core/helper/app_regex.dart';
+import '../../../../core/helper/spacing.dart';
+import '../../../../core/themes/app_text_style.dart';
+import '../../logic/cubit/login_cubit.dart';
+import 'password_validations.dart';
+import 'remember_me_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
