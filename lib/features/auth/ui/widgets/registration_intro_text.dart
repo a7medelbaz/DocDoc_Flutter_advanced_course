@@ -1,8 +1,8 @@
 import '../../../../core/themes/app_text_style.dart';
 import 'package:flutter/material.dart';
 
-class LogInIntroText extends StatelessWidget {
-  const LogInIntroText({super.key});
+class RegistrationIntroText extends StatelessWidget {
+  const RegistrationIntroText({super.key});
 
   @override
   Widget build(BuildContext context) {

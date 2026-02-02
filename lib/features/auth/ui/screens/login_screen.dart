@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/Widgets/app_elevated_button.dart';
 import '../../logic/cubit/login_cubit.dart';
-import '../widgets/log_in_intro_text.dart';
+import '../widgets/registration_intro_text.dart';
 import '../widgets/login_block_listener.dart';
 import '../widgets/policy_and_sign_up.dart';
 import '../widgets/registration_field.dart';
@@ -28,7 +28,7 @@ class LogInScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                LogInIntroText(),
+                RegistrationIntroText(),
                 SizedBox(height: 36.h),
                 RegistrationField(),
                 SizedBox(height: 32.h),
@@ -42,7 +42,7 @@ class LogInScreen extends StatelessWidget {
                 SocialLoginDivider(),
                 SizedBox(height: 32.h),
                 SocialLoginButtons(),
-                SizedBox(height: 93.h),
+                SizedBox(height: 24.h),
                 PolicyAndSignUp(),
                 const LoginBlocListener(),
               ],
