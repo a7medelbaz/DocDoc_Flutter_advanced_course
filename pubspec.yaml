@@ -41,6 +41,7 @@ dependencies:
   freezed_annotation: ^3.1.0
   get_it: ^9.0.5
   intl: ^0.20.2
+  intl_phone_field: ^3.2.0
   json_annotation: ^4.9.0
   json_serializable: ^6.11.1
   pretty_dio_logger: ^1.4.0
@@ -50,10 +51,10 @@ dependencies:
 dev_dependencies:
   build_runner: ^2.10.4
   flutter_lints: ^5.0.0
-  retrofit_generator: ^10.1.4
   flutter_test:
     sdk: flutter
   freezed: ^3.2.3
+  retrofit_generator: ^10.1.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

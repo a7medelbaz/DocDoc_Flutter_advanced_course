@@ -1,6 +1,6 @@
-import 'package:doc_doc/core/routers/app_router.dart';
-import 'package:doc_doc/core/routers/routes.dart';
-import 'package:doc_doc/core/themes/app_colors.dart';
+import 'core/routers/app_router.dart';
+import 'core/routers/routes.dart';
+import 'core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

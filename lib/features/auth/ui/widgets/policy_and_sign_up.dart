@@ -1,23 +1,27 @@
-import 'package:doc_doc/core/helper/extensions.dart';
-import 'package:doc_doc/core/routers/routes.dart';
-import 'package:doc_doc/core/themes/app_colors.dart';
+import '../../../../core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class PolicyAndSignUp extends StatelessWidget {
-  const PolicyAndSignUp({super.key});
+  final String registrationQuestionText;
+  final String registrationOptionText;
+  final VoidCallback registrationOptionNavigation;
+  const PolicyAndSignUp({
+    super.key,
+    required this.registrationQuestionText,
+    required this.registrationOptionText,
+    required this.registrationOptionNavigation,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('Already have an account yet?'),
+        Text(registrationQuestionText),
         GestureDetector(
-          onTap: () {
-            context.pushNamed(Routes.signUpScreen);
-          },
+          onTap: registrationOptionNavigation,
           child: Text(
-            ' Sign Up',
+            registrationOptionText,
             style: TextStyle(
               color: AppColors.mainBlue,
               fontWeight: FontWeight.bold,

@@ -1,9 +1,9 @@
-import 'package:doc_doc/core/Widgets/app_elevated_button.dart';
-import 'package:doc_doc/core/helper/extensions.dart';
-import 'package:doc_doc/core/routers/routes.dart';
-import 'package:doc_doc/core/themes/app_text_style.dart';
-import 'package:doc_doc/features/onboarding/widgets/doc_logo_and_name.dart';
-import 'package:doc_doc/features/onboarding/widgets/doctor_image_and_subtitle.dart';
+import '../../core/Widgets/app_elevated_button.dart';
+import '../../core/helper/extensions.dart';
+import '../../core/routers/routes.dart';
+import '../../core/themes/app_text_style.dart';
+import 'widgets/doc_logo_and_name.dart';
+import 'widgets/doctor_image_and_subtitle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

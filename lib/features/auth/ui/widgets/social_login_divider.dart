@@ -1,5 +1,5 @@
-import 'package:doc_doc/core/themes/app_colors.dart';
-import 'package:doc_doc/core/themes/app_text_style.dart';
+import '../../../../core/themes/app_colors.dart';
+import '../../../../core/themes/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class SocialLoginDivider extends StatelessWidget {

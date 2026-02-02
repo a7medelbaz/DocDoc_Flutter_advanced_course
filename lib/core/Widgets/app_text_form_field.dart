@@ -1,12 +1,10 @@
-import 'package:doc_doc/core/themes/app_colors.dart';
-import 'package:doc_doc/core/themes/app_text_style.dart';
+import '../themes/app_colors.dart';
+import '../themes/app_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextFormField extends StatelessWidget {
-  final EdgeInsetsGeometry? contentPadding;
-  final InputBorder? focusedBorder;
-  final InputBorder? enabledBorder;
+
   final TextStyle? inputTextStyle;
   final TextStyle? hintStyle;
   final String hintText;
@@ -24,9 +22,6 @@ class AppTextFormField extends StatelessWidget {
     this.controller,
     required this.validator,
     this.isObscureText,
-    this.contentPadding,
-    this.focusedBorder,
-    this.enabledBorder,
     this.inputTextStyle,
     this.hintStyle,
     this.suffixIcon,
@@ -50,8 +45,8 @@ class AppTextFormField extends StatelessWidget {
 
         // Padding (17 top/bottom, 20 left/right)
         contentPadding: EdgeInsets.symmetric(
-          vertical: 17.w,
-          horizontal: 20.h,
+          vertical: 17.h,
+          horizontal: 20.w,
         ),
 
         // Border and Radius

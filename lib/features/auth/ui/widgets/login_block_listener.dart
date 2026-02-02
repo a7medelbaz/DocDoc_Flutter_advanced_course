@@ -1,9 +1,9 @@
-import 'package:doc_doc/core/helper/extensions.dart';
-import 'package:doc_doc/core/routers/routes.dart';
-import 'package:doc_doc/core/themes/app_colors.dart';
-import 'package:doc_doc/core/themes/app_text_style.dart';
-import 'package:doc_doc/features/auth/logic/cubit/login_cubit.dart';
-import 'package:doc_doc/features/auth/logic/cubit/login_state.dart';
+import '../../../../core/helper/extensions.dart';
+import '../../../../core/routers/routes.dart';
+import '../../../../core/themes/app_colors.dart';
+import '../../../../core/themes/app_text_style.dart';
+import '../../logic/cubit/login_cubit.dart';
+import '../../logic/cubit/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
