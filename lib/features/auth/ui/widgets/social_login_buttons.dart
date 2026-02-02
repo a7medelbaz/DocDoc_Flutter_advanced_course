@@ -13,21 +13,21 @@ class SocialLoginButtons extends StatelessWidget {
       children: [
         buildSocialIcon(
           onTap: () {
-            /* Google Login */
+            //ToDo /* Google Login */
           },
           iconPath: AppAssets.googleIcon,
         ),
         const SizedBox(width: 32),
         buildSocialIcon(
           onTap: () {
-            /* Facebook Login */
+            //ToDo /* Facebook Login */
           },
           iconPath: AppAssets.facebookIcon,
         ),
         const SizedBox(width: 32),
         buildSocialIcon(
           onTap: () {
-            /* Apple Login */
+            //ToDo /* Apple Login */
           },
           iconPath: AppAssets.appleIcon,
         ),
