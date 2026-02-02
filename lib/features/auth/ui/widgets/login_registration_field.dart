@@ -9,14 +9,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class RegistrationField extends StatefulWidget {
-  const RegistrationField({super.key});
+class LoginRegistrationField extends StatefulWidget {
+  const LoginRegistrationField({super.key});
 
   @override
-  State<RegistrationField> createState() => _RegistrationFieldState();
+  State<LoginRegistrationField> createState() => _LoginRegistrationFieldState();
 }
 
-class _RegistrationFieldState extends State<RegistrationField> {
+class _LoginRegistrationFieldState extends State<LoginRegistrationField> {
   bool isObscureText = true;
 
   // bool hasLowercase = false;
