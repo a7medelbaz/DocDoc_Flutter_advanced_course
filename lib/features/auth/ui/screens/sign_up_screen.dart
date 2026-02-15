@@ -1,6 +1,9 @@
 import 'package:doc_doc/core/helper/extensions.dart';
 import 'package:doc_doc/core/helper/spacing.dart';
+import 'package:doc_doc/features/auth/logic/SignUPCubit/sign_up_cubit.dart';
+import 'package:doc_doc/features/auth/ui/widgets/sign_up_bloc_listener.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/Widgets/app_elevated_button.dart';
 import '../../../../core/routers/routes.dart';
@@ -37,7 +40,7 @@ class SignUpScreen extends StatelessWidget {
                 verticalSpace(32),
                 AppElevatedButton(
                   onPressed: () {
-                    // ToDo Sign Action
+                    validateThenDoLogin(context);
                   },
                   text: 'Create Account',
                 ),
@@ -53,11 +56,22 @@ class SignUpScreen extends StatelessWidget {
                   registrationOptionNavigation: () =>
                       context.pushNamed(Routes.loginScreen),
                 ),
+                SignUpBlocListener(),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  void validateThenDoLogin(BuildContext context) {
+    if (context
+        .read<SignUpCubit>()
+        .formKey
+        .currentState!
+        .validate()) {
+      context.read<SignUpCubit>().emitSignupStates();
+    }
   }
 }
