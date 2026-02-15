@@ -8,4 +8,7 @@ class AppAssets {
   static const googleIcon = 'assets/svgs/google_icon.svg';
   static const facebookIcon = 'assets/svgs/facebook_icon.svg';
   static const appleIcon = 'assets/svgs/apple_icon.svg';
+  static const alertIcon = 'assets/svgs/Alert.svg';
+  static const shapeIcon = 'assets/svgs/Shape.svg';
+  static const notificationIcon = 'assets/svgs/Notification.svg';
 }

@@ -10,4 +10,5 @@ class AppColors {
   static const Color hintColor = Color(0xffC2C2C2);
   static const Color textFieldBorderColor = Color(0xffEDEDED);
   static const Color darkBlue = Color(0xff242424);
+  static const Color mattBlack = Color(0xff151515);
 }
