@@ -74,4 +74,9 @@ class AppTextStyle {
     fontWeight: AppFontWeight.bold,
     color: AppColors.mattBlack,
   );
+  static TextStyle font18MediumWhite = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: AppFontWeight.medium,
+    color: AppColors.mainWhite,
+  );
 }
