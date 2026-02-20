@@ -21,4 +21,7 @@ class AppAssets {
   static const splashScreen = '$_imagePath/splash_screen.png';
   static const nearestDoctorBackground = '$_imagePath/Background.png';
   static const nurseImage = '$_imagePath/nurse_image.png';
+  static const generalDoctorIcon =
+      '$_imagePath/Man Doctor Europe 1.png';
+  static const doctorImageCard = '$_imagePath/doctor_image_card.png';
 }
